@@ -19,7 +19,7 @@
     "wct-browser-legacy": "^1.0.1"
   },
   "scripts": {
-    "start": "nodemon server.js | npm run watch | polymer serve --proxy-path /api/books --proxy-target http://localhost:8000/api/books",
+    "start": "node server.js | npm run watch | polymer serve --proxy-path /api/books --proxy-target http://localhost:8000/api/books",
     "test": "polymer test",
     "watch": "browser-sync start --no-notify --files \"src/**/*.* \"",
     "test:chrome": "polymer test --local chrome"
